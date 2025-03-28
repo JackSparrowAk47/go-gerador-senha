@@ -17,8 +17,8 @@ func Input() PasswordOptions {
 	lengthInput = strings.TrimSpace(lengthInput)
 	length, err := strconv.Atoi(lengthInput)
 	if err != nil || length <= 0 {
-		fmt.Println("Entrada inválida! Usando tamanho padrão: 8")
-		length = 8
+		fmt.Println("Entrada inválida! Usando tamanho padrão: 15")
+		length = 15
 	}
 
 	// Pergunta quais tipos de caracteres incluir

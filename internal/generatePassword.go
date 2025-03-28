@@ -25,7 +25,7 @@ func GeneratePassword(options PasswordOptions) (string, error) {
 	var charset string
 
 	if options.Length == 0 {
-		options.Length = 8
+		options.Length = 15
 	}
 
 	if options.Uppercase {

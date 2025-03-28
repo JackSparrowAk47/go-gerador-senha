@@ -1,8 +1,10 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"github.com/Rei-Nicolau-o-Grande/generator-password/internal"
+	"os"
 )
 
 func main() {
@@ -14,4 +16,14 @@ func main() {
 	}
 
 	fmt.Println("\n🔑 Senha gerada:", password)
+
+	waitForExit()
+}
+
+func waitForExit() {
+	fmt.Println("\nPressione ENTER para sair...")
+	_, err := bufio.NewReader(os.Stdin).ReadBytes('\n')
+	if err != nil {
+		return
+	}
 }

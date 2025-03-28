@@ -1,1 +1,4 @@
-cmd/dist
+cmd/bin
+.idea
+build.sh
+
